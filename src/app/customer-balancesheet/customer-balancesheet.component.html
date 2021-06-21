@@ -1,0 +1,22 @@
+<div style="margin-top: 130px">
+  <table class="table table-dark">
+    <thead>
+    <tr><h4>List of payment and order for each user</h4></tr>
+    <tr>
+      <th scope="col">USER</th>
+      <th scope="col" class="text-center">Total Order Placed By The User</th>
+      <th scope="col" class="text-center">Total Payment Made By The User</th>
+      <th scope="col" class="text-center">Due(-)/Credit Balance(+)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let i of arraOfDuesPerUser">
+      <th scope="row">{{i.user}}</th>
+      <td class="text-center">{{i.totalOrder}}</td>
+      <td class="text-center">{{i.totalPayment}}</td>
+      <td class="text-center" *ngIf="i.dueAmount<0">{{i.dueAmount}}</td>
+      <td class="text-center" *ngIf="i.dueAmount>0">{{'+' + i.dueAmount}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
