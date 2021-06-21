@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Run npm install
 Used node version 12.14.1 while developing.
 
-##npm install -g @angular/cli
+npm install -g @angular/cli
 
 ## Development server
 
