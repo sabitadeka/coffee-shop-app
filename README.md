@@ -3,8 +3,9 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
 
 ## Run npm install
-Use node version 12.14.1 while developing.
+Used node version 12.14.1 while developing.
 
+##npm install -g @angular/cli
 
 ## Development server
 
